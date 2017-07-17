@@ -1,9 +1,48 @@
 #sidebar{
-    background-color: grey;
-    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    padding-right: 0;
 }
 
-#side-buttons{
-    background-color: darkgray;
-    height: 100vh;
+#page-content{
+    background-color: #EEE;
+    overflow-y: scroll;
+    padding: 0;
+}
+
+#main-grid{
+    min-height: 110%;
+    max-height: 110%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 101%;
+}
+
+#logo{
+    background-color: #FFF;
+    min-height: 10%;
+    max-height: 10%;
+}
+
+#logo a{
+    text-align: center;
+    vertical-align: middle;
+    color: #fc5b5b;
+}
+
+#social{
+    background-color: #333;
+    padding-right: 0;
+    padding-top: 2%;
+    text-align:center;
+}
+
+#social button{
+    margin: auto;
+}
+
+#menu{
+    background-color: rgb(34,34,34);
 }
