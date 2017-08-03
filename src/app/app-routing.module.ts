@@ -6,9 +6,13 @@ import { AppComponent } from './app.component';
 
 const appRoutes: Routes = [
     {
+        path: 'productos',
+        loadChildren: './products/products.module#ProductsModule'
+    },
+    {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'app',
+        loadChildren: './home/home.module#HomeModule'
     },
 ];
 

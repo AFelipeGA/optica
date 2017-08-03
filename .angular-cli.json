@@ -19,12 +19,12 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "assets/Semantic-UI-CSS-master/semantic.min.css"
+        "styles.scss",
+        "../node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
-        "assets/Semantic-UI-CSS-master/semantic.min.js"
+        "../node_modules/owl.carousel/dist/owl.carousel.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -55,7 +55,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "component": {}
   }
 }

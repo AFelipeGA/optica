@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 
-import { BrowserModule } from '@angular/platform-browser';
-import { NgSemanticModule } from 'ng-semantic';
+import { CommonModule } from '@angular/common';
+import { SuiModule } from 'ng2-semantic-ui';
 
 @NgModule({
   imports: [
-    BrowserModule,
-    NgSemanticModule
+    CommonModule,
+    SuiModule
   ],
   declarations: [],
   exports: [

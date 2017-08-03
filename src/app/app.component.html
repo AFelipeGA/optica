@@ -1,76 +1,159 @@
-<div class="ui grid" id="main-grid">
-  <div class="stretched row" id="wrapper">
-    <div class="three wide column" id="sidebar">
-      <div class="row" id="logo">
-        <a href="/">
-          <h1>Optica</h1>
-        </a>
+<div class="columns is-gapless" id="main-container">
+  <div class="column is-2 full-height" id="sidebar">
+    <div class="is-fullwidth has-text-centered" id="logo">
+      <h1 class="ui header">
+        <img class="ui image" src="/assets/images/logo.png">
+      </h1>
+    </div>
+    <div class="columns is-gapless full-height">
+      <div class="column is-2 full-height has-text-centered" id="social">
+        <button class="ui small inverted red circular icon button" id="shopping-cart">
+          <i class="shop icon"></i>
+          <div class=" ui small floating circular red label">1</div>
+        </button>
+        <div class="ui inverted divider"></div>
+        <div class="ui fluid inverted borderless vertical icon menu " id="social-buttons">
+          <div class="item">
+            <i class="facebook icon"></i>
+          </div>
+          <a class="item">
+            <i class="twitter icon"></i>
+          </a>
+          <a class="item">
+            <i class="instagram icon"></i>
+          </a>
+          <a class="item">
+            <i class="mail icon"></i>
+          </a>
+          <a class="item">
+            <i class="phone icon"></i>
+          </a>
+        </div>
       </div>
-      <div class="ui grid">
-        <div class="row">
-          <div class="three wide column" id="social">
-            <button class="circular ui inverted icon button">
+      <div class="column">
+        <div class="ui inverted fluid borderless vertical menu">
+          <div class="item">
+            <div class="ui transparent inverted left icon input">
+              <input type="text" placeholder="Buscar...">
               <i class="search icon"></i>
-            </button>
-            <div class="ui inverted divider"></div>
-            <button class="circular red ui inverted icon button">
-              <i class="shop icon"></i>
-            </button>
-            <div class="ui inverted divider"></div>
-            <div class="ui basic inverted vertical icon buttons">
-              <button class="ui button">
-                <i class="facebook icon"></i>
-              </button>
-              <button class="ui button">
-                <i class="twitter icon"></i>
-              </button>
-              <button class="ui button">
-                <i class="instagram icon"></i>
-              </button>
-              <button class="ui button">
-                <i class="phone icon"></i>
-              </button>
-              <button class="ui button">
-                <i class="user icon"></i>
-              </button>
             </div>
           </div>
-          <div class="thirteen wide column" id="menu"></div>
+          <a class="item">
+            Inicio
+          </a>
+          <div class="ui left pointing dropdown link item">
+            <i class="dropdown icon"></i>
+            Gafas de Sol
+            <div class="menu">
+              <div class="item">Inbox</div>
+              <div class="item">Starred</div>
+              <div class="item">Sent Mail</div>
+              <div class="item">Drafts (143)</div>
+              <div class="divider"></div>
+              <div class="item">Spam (1009)</div>
+              <div class="item">Trash</div>
+            </div>
+          </div>
+          <div class="ui left pointing dropdown link item">
+            <i class="dropdown icon"></i>
+            Monturas
+            <div class="menu">
+              <div class="item">Inbox</div>
+              <div class="item">Starred</div>
+              <div class="item">Sent Mail</div>
+              <div class="item">Drafts (143)</div>
+              <div class="divider"></div>
+              <div class="item">Spam (1009)</div>
+              <div class="item">Trash</div>
+            </div>
+          </div>
+          <a class="item">
+            Contacto
+          </a>
         </div>
       </div>
     </div>
-    <div class="thirteen wide column" id="page-content">
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
+  </div>
+  <div class="column full-height" id="content">
+    <router-outlet></router-outlet>
 
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-
-      <p>asd</p>
-      <p>asd</p>
-      <p>asd</p>
-
-      <p>asd</p>
+    <div class="ui vertical footer segment">
+      <div class="ui horizontal divider">
+        <h1 class="ui header">
+          Nuestras Marcas
+        </h1>
+      </div>
+      <div class="ui container" id="brands">
+        <swiper [config]="brandsConfig">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/assets/images/brands/rayban.png" class="ui fluid rounded image">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/brands/julbo.jpg" class="ui fluid rounded image">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/brands/oakley.jpg" class="ui fluid rounded image">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/brands/totto.png" class="ui fluid rounded image">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/brands/dolce.png" class="ui fluid rounded image">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/brands/cat.jpg" class="ui fluid rounded image">
+            </div>
+          </div>
+        </swiper>
+      </div>
+      <div style='height: 200px'>
+        <div parallax speed="5" src="/assets/images/parallax/footer2.jpg" id="footer-parallax">
+          <div class="ui container">
+            <div class="columns">
+              <div class="column">
+                <h2 class="ui inverted icon header">
+                  <i class="shipping icon"></i>
+                  <div class="content">
+                    Entregas Rápidas
+                    <div class="sub header">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                  </div>
+                </h2>
+              </div>
+              <div class="column">
+                <h2 class="ui inverted icon header">
+                  <i class="protect icon"></i>
+                  <div class="content">
+                    Compras Seguras
+                    <div class="sub header">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                  </div>
+                </h2>
+              </div>
+              <div class="column">
+                <h2 class="ui inverted icon header">
+                  <i class="money icon"></i>
+                  <div class="content">
+                    Precios Inmejorables
+                    <div class="sub header">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                  </div>
+                </h2>
+              </div>
+              <div class="column">
+                <h2 class="ui inverted icon header">
+                  <i class="trademark icon"></i>
+                  <div class="content">
+                    100% Originales
+                    <div class="sub header">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                  </div>
+                </h2>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui red inverted segment">
+          Informacion de la empresa y Copyright ©
+      </div>  
     </div>
   </div>
 </div>
