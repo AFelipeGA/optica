@@ -28,31 +28,32 @@
 #content{
     background-color: #FAFAFA;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #social{
     background-color: #333;
+    height: 100vh;
     #social-buttons{
         margin: 0;
         margin-top: -10px;
         .item{
             background-color: #333;
-            padding-left: auto;
+            padding-left: 0;
+            padding-right: 0;
         }
     }
     #shopping-cart{
-    text-align: center;
-    margin:0;
-    margin-top: 5px;
-    .label{
-        margin-left: 0;
+        text-align: center;
+        margin:0;
+        margin-top: 5px;
+        .label{
+            margin-left: 0;
+            position: relative!important;
+        }
     }
 }
-}
 
-.label{
-    position: relative!important;
-}
 
 #brands{
     margin: 15px 0px;

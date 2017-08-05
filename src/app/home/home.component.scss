@@ -36,12 +36,22 @@
      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23FC5B5B'%2F%3E%3C%2Fsvg%3E");
 }
 
-.cross{
-    text-decoration: line-through;
-    font-size: 10px;
+#special-products{
+    .deal{
+        margin-left: 10px;
+        color: rgb(252, 91, 91);
+    }
+    .cross{
+        text-decoration: line-through;
+        font-size: 10px;
+    }
+    .cards{
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+    .container{
+        margin-left: 0.5%!important;
+        //margin-right: 1%!important;
+    }
 }
 
-.deal{
-    margin-left: 10px;
-    color: rgb(252, 91, 91);
-}
